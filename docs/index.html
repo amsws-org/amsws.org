@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>American Software Society</title>
+	<script src="paypal/donate-sdk.js"></script>
+  <link href="main.css" rel="stylesheet">
+<body>
+  <topnav>
+    <div></div>
+    <div><a href="/"><div><img logo src="logo/128x.png"></div></a></div>
+    <div></div>
+  </topnav>
+  <page-wrapper>
+    <page>
+      <mission>
+        to charitably further competency in the field of computer science for
+        individuals who are new to the field
+      </mission>
+      <par>
+        Computing competency is a quickly growing need in all facets of
+        industry, engineering, research, and government.
+        Anyone and everyone, regardless of their background, should have the
+        ability to work with computing devices easily and efficiently.
+      </par>
+      <par>
+        The American Software Society is founded on the principle that everyone
+        should have this opportunity. Our staff and volunteers are here to teach
+        programming principles and skills to anyone new to computing. Whether
+        they are students pursuing a degree in computer science, a professional
+        looking to switch to a computing career, or someone looking to
+        incorporate computing principles into their current career, students and
+        clients of the American Software Society receive individualized
+        instruction for their needs.
+      </par>
+      <par class="text-center">
+        <iframe
+            src="//www.paypal.com/giving/campaigns?campaign_id=MUAEJWUKUHD54"
+            title="PayPal donate campaign card"
+            frameborder="0"
+            width=382
+            height=550
+            scrolling="no"
+        ></iframe>
+      </par>
+      <par>
+        The American Software Society is a
+        <a href="//www.irs.gov/charities-non-profits/charitable-organizations/charitable-organizations-substantiation-and-disclosure-requirements" target="_blank">501(c)(3) nonprofit</a>
+        organization recognized as tax-exempt by the
+        United States Internal Revenue Service. Your contributions are wholly
+        tax-deductible and
+        <span title="As a public charity, American Software Society must regularly pass a public support tests. Your donation of support, whether large or small, is highly valued on its own!">all amounts</span>
+        are highly valued and appreciated!
+      </par>
+			<par class="text-center">
+				<noscript>
+					<form action="//www.paypal.com/donate" method="post" target="_top">
+						<input type="hidden" name="hosted_button_id" value="VFTAGH9A6786G">
+						<input type="image" src="paypal/btn.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+					</form>
+				</noscript>
+				<div id="donate-button-container">
+          <div id="donate-button"></div>
+          <script>
+            PayPal.Donation.Button({
+              env:'production',
+              hosted_button_id:'6KRU8WKJB2A8Y',
+              image: {
+                src:`${location.pathname}paypal/btn.gif`,
+                alt:'Donate with PayPal button',
+                title:'PayPal - The safer, easier way to pay online!',
+              }}).render('#donate-button');
+          </script>
+        </div>
+      </par>
+    </page>
+    <botnav>
+      <disclaimer>
+        <div>Privacy policy</div>
+        <div>&copy;2023-present, American Software Society&trade;</div>
+        <div>Terms of use</div>
+      </disclaimer>
+    </botnav>
+  </page-wrapper>

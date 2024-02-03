@@ -1,0 +1,182 @@
+@import url('fonts/roboto.css');
+
+:root, body, html {
+  --topnav-height: 50px;
+  background: rgba(50, 49, 59, 1);
+  border: 0px;
+  color: white;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  height: 100vh;
+  margin: 0px;
+  max-height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0px;
+  position: relative;
+  width: 100vw;
+}
+
+.text-center {
+  justify-content: center;
+  text-align: center;
+}
+
+a[title],
+div[title],
+span[title] {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+}
+
+a {
+  border: 1px solid transparent;
+  color: rgba(180, 180, 180, 1);
+}
+
+a:active, a:hover {
+  border: 1px dashed white;
+  color: white;
+}
+
+a:visited {
+  color: rgba(120, 120, 120, 1);
+}
+
+botnav {
+  box-shadow: 0px -1px 3px black;
+  flex: 0 0 auto;
+  max-width: 100vw;
+  overflow-x: auto;
+  position: relative;
+  z-index: 90009001;
+}
+
+botnav > div {
+  display: inline-flex;
+  flex: auto;
+  flex-wrap: nowrap;
+}
+
+botnav > disclaimer {
+  column-span: all;
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  max-width: inherit;
+  overflow-x: auto;
+}
+
+botnav > disclaimer > div {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0px 4em;
+}
+
+botnav > disclaimer > div:first-child {
+  flex: auto;
+  justify-content: right;
+}
+
+botnav > disclaimer > div:last-child {
+  flex: auto;
+  justify-content: left;
+}
+
+iframe {
+  flex: auto;
+}
+
+mission {
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  font-style: italic;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+mission::after {
+  align-self: end;
+  content: close-quote;
+  font-size: 3em;
+  padding-top: 1em;
+}
+
+mission::before {
+  align-self: start;
+  content: open-quote;
+  font-size: 3em;
+  padding-top: 0.5em;
+}
+
+page {
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
+  vertical-align: top;
+}
+
+page > par {
+  display: block;
+  margin: 1em auto;
+  max-width: 1200px;
+  text-align: justify;
+}
+
+page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--topnav-height) - (max(15vh, 64px) - 40px));
+  max-height: calc(100vh - var(--topnav-height) - (max(15vh, 64px) - 40px));
+  max-width: 100vw;
+  min-height: calc(100vh - var(--topnav-height) - (max(15vh, 64px) - 40px));
+  min-width: 100vw;
+  overflow: auto;
+  padding-top: calc(max(15vh, 64px) - 40px);
+  position: relative;
+  width: 100vw;
+  z-index: 90009000;
+}
+
+topnav {
+  align-items: center;
+  box-shadow: 0px 3px 3px black;
+  display: flex;
+  flex-wrap: nowrap;
+  height: var(--topnav-height);
+  position: relative;
+  width: 100vw;
+  z-index: 90009002;
+}
+
+topnav > div {
+  align-items: baseline;
+  display: inline-flex;
+  height: inherit;
+}
+
+topnav > div:first-child,
+topnav > div:last-child {
+  flex: auto;
+}
+
+topnav div:has(> img[logo]) {
+  background: rgba(50, 49, 59, 1);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 3px 3px black;
+  margin-top: var(--topnav-height);
+}
+
+topnav img[logo] {
+  max-height: 15vh;
+  min-height: 64px;
+  margin-top: calc(-1 * var(--topnav-height));
+  padding-bottom: 5px;
+  width: auto;
+}
